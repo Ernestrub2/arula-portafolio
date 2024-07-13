@@ -1,0 +1,351 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* Estilos globales */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header__logo h1 {
+    font-size: 24px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__list li {
+    margin-left: 20px;
+}
+
+/*Hero*/
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #e0e0e0;
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+}
+
+.hero__image {
+    width: 150px;
+    margin-right: 20px;
+}
+
+.hero__text h2 {
+    font-size: 32px;
+}
+
+.hero__text p {
+    margin-top: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Sección sobre mí */
+.about {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about__container p {
+    margin-top: 20px;
+}
+
+/* Skills */
+.skills {
+    padding: 50px 0;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.skills__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    margin: 10px;
+    text-align: center;
+}
+
+.skill img {
+    width: 100px;
+}
+
+.skill p {
+    margin-top: 10px;
+}
+
+/* Hobbies */
+.hobbies {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.hobbies__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hobby {
+    margin: 10px;
+    text-align: center;
+}
+
+.hobby img {
+    width: 100px;
+}
+
+.hobby p {
+    margin-top: 10px;
+}
+
+/* Formación académica */
+.academic {
+    padding: 50px 0;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.academic__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.academic__item {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    text-align: left;
+}
+
+.academic__item img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.academic__text h4 {
+    margin: 0;
+}
+
+.academic__text p {
+    margin: 5px 0 0;
+}
+
+/* Experiencia Profesional/Proyectos */
+.experience {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.experience__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.experience__item img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.experience__text h4 {
+    margin: 0;
+}
+
+.experience__text p {
+    margin: 10px 0;
+}
+
+.button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #333;
+}
+
+/* Contacto */
+.contact {
+    padding: 50px 0;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+.contact__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__image {
+    width: 300px;
+    margin: 20px;
+}
+
+.contact__form {
+    max-width: 500px;
+    margin: 20px;
+}
+
+.contact__form h3 {
+    margin-bottom: 20px;
+}
+
+.contact__form p {
+    margin-bottom: 20px;
+}
+
+.contact__form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__form input, .contact__form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact__form button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact__form button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsividad */
+/*Tablet*/
+@media (min-width: 768px) {
+    .header__logo h1 {
+        font-size: 32px;
+    }
+
+    .hero__text h2 {
+        font-size: 48px;
+    }
+
+    .contact__container {
+        flex-direction: row;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__text h2 {
+        font-size: 24px;
+    }
+
+    .contact__container {
+        flex-direction: column;
+    }
+
+    .contact__image {
+        width: 100%;
+        margin: 0;
+    }
+}
